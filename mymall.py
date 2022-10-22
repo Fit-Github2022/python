@@ -41,4 +41,4 @@ cm_display = metrics.ConfusionMatrixDisplay(confusion_matrix = confusion_matrix,
 cm_display.plot()
 plt.show()
 from sklearn.metrics import classification_report
-print(classification_report(ytest, y_model))
+st.write(classification_report(ytest, y_model))
