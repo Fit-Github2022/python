@@ -21,8 +21,11 @@ from sklearn.naive_bayes import GaussianNB
 model = GaussianNB()                       
 model.fit(Xtrain, ytrain)                 
 y_model = model.predict(Xtest)
+
 from sklearn.metrics import accuracy_score
-accuracy_score(ytest, y_model) #accuracy is low
+a=accuracy_score(ytest, y_model) #accuracy is low
+st.write(a)
+
 from sklearn.metrics import classification_report
 print(classification_report(ytest, y_model))
 # Confusion Matrix
