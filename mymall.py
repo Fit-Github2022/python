@@ -1,7 +1,7 @@
 import seaborn as sns
 import pandas as pd
 import matplotlib.pyplot as plt
-mc = pd.read_csv('/content/mall_customer.csv')
+mc = pd.read_csv('mall_customer.csv')
 
 mc.head()
 
