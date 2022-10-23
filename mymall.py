@@ -45,6 +45,7 @@ fig = plt.figure(figsize=(10, 4))
 cm_display = metrics.ConfusionMatrixDisplay(confusion_matrix = confusion_matrix,display_labels=np.unique(y_mc))
 cm_display.plot()
 plt.show()
+fig=plt.figure(figsize=(10,4))
 st.pyplot(fig)
 
 from sklearn.metrics import classification_report
